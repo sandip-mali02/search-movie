@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+ 
+
+$movie-add-font: 'Roboto Mono', monospace;
+
+$movie-list-font: 'Lato', sans-serif;
+
+ 
+
+@mixin d-flex($just, $align) {
+
+  display: flex;
+
+  justify-content: $just;
+
+  align-items: $align;
+
+}
+
+ 

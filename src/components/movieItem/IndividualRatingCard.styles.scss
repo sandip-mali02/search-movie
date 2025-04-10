@@ -1,0 +1,20 @@
+@import '../../base.scss';
+
+.individual-rating-card{
+    border: 2px solid #64ABDF;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    display: flex;
+    color: #64ABDF;
+    span{
+        margin: 0;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 786px){
+        width: auto;
+        display: inline-flex;
+        margin-right: 1rem;
+    }
+}

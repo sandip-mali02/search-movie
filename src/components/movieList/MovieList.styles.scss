@@ -1,0 +1,54 @@
+@import '../../base.scss';
+
+.movie-container {
+    border-top: 1px solid #D8DDE1;
+    display: block;
+    width: 100%;
+    .movie-list, .movie-details, .error-div {
+        width: 100%;
+        font-size: 0.75rem;
+        margin-top: 0.75rem;
+        border-radius: 2px;
+    }
+    .movie-list{
+        border: 1px solid #D8DDE1;
+        &-title{
+            color: #B0B9C2;
+            font-family: $movie-list-font;
+            text-shadow: 0 2px 4px #F2F3F5;
+        }
+        ul{
+            display: block;
+            grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
+            list-style-type: none;
+            li{
+                display: block;
+            }
+            margin: 0;
+            padding: 5px;
+        }
+        :hover{
+            cursor: pointer;
+        }
+    }
+    .error-div{
+        border-bottom: 1px solid #D8DDE1;
+        color: red;
+    }
+    .movie-details{
+        border:  1px solid #D8DDE1;
+    }
+
+
+    @media only screen and (min-width: 786px){
+       .movie-list-details-container{
+        display: flex;
+        height: 100%;
+        min-height: 500px;
+        overflow-y: auto ;
+       }
+       .movie-details{
+        border-left: none;
+       }
+    }
+}

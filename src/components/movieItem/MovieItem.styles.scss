@@ -1,0 +1,55 @@
+@import '../../base.scss';
+
+.movie-item-info{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    font-family: $movie-list-font;
+    display: inline-flex;
+    text-align: left;
+
+    &-episode{
+        margin-bottom: 10px;
+        font-weight: 300;
+        width: 20%;
+        color: #B0B9C2;
+    }
+    &-title{
+        margin-bottom: 10px;
+        color: #5F7385;
+        width: 60%;
+        font-weight: 500;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+    &-rating{
+        display: none !important;
+    }
+    &-release-date{
+        color: #A2ADB8;
+        width: 20%;
+        font-weight: 300;
+    }
+
+    @media only screen and (min-width: 786px){
+        font-size: 1rem;
+        &-episode{
+            width: 15%;
+        }
+        &-title{
+            width: 35%;
+        }
+        &-rating{
+            width: 30%;
+            display: inline-flex !important;
+        }
+        &-release-date{
+            float: right;
+            text-align: center;
+        }
+    }    
+}
