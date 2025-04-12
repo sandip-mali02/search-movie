@@ -16,7 +16,7 @@ export interface Movie {
   created: string;
   edited: string;
   url: string;
-  totalSeasons: number;
+  totalSeasons?: number;
   average_rating: number;
   movieDetails: MovieDetails;
 }
@@ -28,7 +28,7 @@ export type Ratings = {
 
 export interface MovieDetails {
   Title: string;
-  Year: number;
+  Year: number | string;
   Rated: string;
   Released: string;
   Runtime: string;
@@ -50,6 +50,7 @@ export interface MovieDetails {
   DVD?: string;
   BoxOffice?: string;
   Production?: string;
+  totalSeasons?: number | string;
   Website?: string;
   Response?: boolean | string;
 }

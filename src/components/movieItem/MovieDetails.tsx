@@ -46,7 +46,7 @@ const MovieDetails = () => {
             </p>
           </div>
           <div className="movie-details-info-director">
-            Director By : {selectedMovie.director}
+            Directed By : {selectedMovie.director}
           </div>
 
           <div className="movie-details-info-rating">

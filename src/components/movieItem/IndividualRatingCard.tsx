@@ -13,7 +13,7 @@ const IndividualRatingCard = ({ ratings }: IndividualRatingCardProps) => {
       return (
         <div className="individual-rating-card" key={rating.Source}>
           <span>
-            {rating.Source}: {getReviewInPercentage(rating.Value)}
+            {rating.Source}: {getReviewInPercentage(rating.Value)}%
           </span>
         </div>
       );
