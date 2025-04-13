@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ErrorInfo } from "react";
 import "./App.css";
 import { Provider } from "react-redux";
 import store from "./store";
@@ -7,7 +7,7 @@ import FallbackComponent from "./components/errorBoundry/FallbackComponent";
 import SearchMovie from "./components/searchMovie/SearchMovie";
 
 function App() {
-  const logError = (error: Error, info: { componentStack: string }) => {
+  const logError = (error: Error, info: ErrorInfo) => {
     //
   };
   return (
