@@ -9,6 +9,7 @@ import MovieDetails from "../movieItem/MovieDetails";
 
 const MovieList = () => {
   const [updatedMovieList, setUpdatedMovieList] = useState<Array<Movie>>([]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const movieList: Array<Movie> =
     useSelector((state: RootState) => state.movies.list) || [];
 
